@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*
+*{
+    border: 1px solid red;
+}
+*/
+
+@media (max-width:390px){
+
+    .spring-collection-text{
+        font-size: 400%;
+    }
+
+    .featured-products-images-part{
+        margin-top: 50px;
+        margin-bottom: 200px;
+        height: 400px;
+    }
+
+    .featured-products-text{
+        margin-top: 50px;
+    }
+
+    .clothin-piece-price-description{
+        margin-left: 15px;
+    }
+
+    .clothin-piece-description{
+        margin-left: 15px;
+    }
+
+    .video{
+        width: 100%;
+    }
+
+    .wear-shoes-hat-wrapper{
+        grid-template-columns:1fr;
+        margin-top: 2100px;
+    }
+
+    .first-field img{
+        width: 95%;
+        margin: 0;
+    }
+
+    .text-together1{
+        width: 250px;
+        margin: 0;
+        left:35%;
+        top:15%;
+        overflow: hidden;
+    }
+
+    .text-together2{
+        width: 150px;
+        margin: 0;
+        left:50%;
+        top:40%;
+        overflow: hidden;
+    }
+
+    .text-together3{
+        width: 180px;
+        margin: 0;
+        left:15%;
+        overflow: hidden;
+    }
+    
+    .shop-collection{
+        display: none;
+    }
+    
+    .lorem-ipsum{
+        display: none;
+    }
+    
+
+    .discount-field{
+        margin-top: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .discount-text-field{
+        margin: 0px;
+    }
+
+    .discount-description{
+        display: none;
+    }
+
+    .subscribe-now{
+        font-size: 14px;
+    }
+
+
+    .text-decoration-parts{
+        flex-wrap: wrap;
+        width:80%;
+    }
+
+
+    .grey-part-clothes{
+        height: 1350vh;
+    }
+    
+
+    .customer-review-section{
+        border:none;
+        margin-bottom: 105vh;
+    }
+
+ 
+
+    .quote-of-day{
+        margin-top: 250vh;
+        border: none;
+        text-align: center;
+    }
+
+    .quote-part-2{
+        border-top:1px solid grey ;
+        border-bottom:1px solid grey ;
+        width: 90%;
+    }
+
+
+    .menu-button{
+        top:10% !important;
+        display: block;
+
+    }
+
+
+    .menu-container{
+        width:65% !important;
+    }
+
+    .appearing-box-clothing{
+        bottom:10% !important;
+    }
+    .appearing-box-clothing-info{
+        bottom:3% !important;
+    }
+}

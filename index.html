@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vibewave</title>
+    <link rel="stylesheet" href="css\header-style.css" />
+    <link rel="stylesheet" href="css\login-register.css" />
+    <link rel="stylesheet" href="css\main.css" />
+    <link rel="stylesheet" href="css\footer.css" />
+    <link rel="stylesheet" href="css\media.css" />
+    <link rel="stylesheet" href="css\menu.css" />
+    <link rel="icon" type="image/jpeg" href="img\clothes-icon.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-wrapper">
+        <div class="first-header">
+          <div>Let`s talk! <strong>+380 000 0001</strong></div>
+          <div class="shinning-200-dollars">
+            Free shipping on a purchase value of $200
+          </div>
+          <div class="firts-header-icons">
+            <div>
+              <a href="https://www.google.com.ua/?hl=uk"
+                ><ion-icon name="search-circle-outline"></ion-icon
+              ></a>
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/feed/"
+                ><ion-icon name="person-outline"></ion-icon
+              ></a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/_maradenchik_/?theme=dark"
+                ><ion-icon name="heart-outline"></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="side-menu">
+        <button class="menu-button">Menu</button>
+        <div class="menu-container hidden">
+          <div class="second-header">
+            <a class="logo" onclick="scrollToSection()" href="#start"
+              ><h2 class="logo">~Vibewave~</h2></a
+            >
+            <a onclick="scrollToSection()" href="#featured-products"
+              >Featured</a
+            >
+            <a onclick="scrollToSection()" href="#best-sales">Best sales</a>
+            <a onclick="scrollToSection()" href="#flash-sales">Flash sales</a>
+            <a onclick="scrollToSection()" href="#contact-us">Contact us</a>
+            <button class="btnLogin-popup">Login</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrapper">
+      <span class="icon-close">
+        <ion-icon name="close"></ion-icon>
+      </span>
+
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="mail" required />
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox" />Remember me</label>
+            <a href="#">Forgot password?</a>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <div class="login-register">
+            <p>
+              Don`t have an account?
+              <a href="#" class="register-link">Register</a>
+            </p>
+          </div>
+        </form>
+      </div>
+
+      <div class="form-box register">
+        <h2>Registration</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="person"></ion-icon></span>
+            <input type="mail" required />
+            <label>Username</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="mail" required />
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label
+              ><input type="checkbox" />I agree to the terms & conditions</label
+            >
+          </div>
+          <button type="submit" class="btn">Register</button>
+          <div class="login-register">
+            <p>
+              Already have an account? <a href="#" class="login-link">Login</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <main>
+      <section id="start">
+        <div class="first-photo-container">
+          <video autoplay loop muted>
+            <source src="img\ocean_-_62249 (Original).mp4" type="video/mp4" />
+          </video>
+
+          <div class="banner-1-text-position">
+            <div class="spring-collection-text">Spring <br />Collection</div>
+            <div class="spring-collection-info">
+              Welcome to our empowering realm of knowledge and inspiration,
+              where limitless possibilities await you.
+            </div>
+            <a
+              class="no-decoration"
+              onclick="scrollToSection()"
+              href="#shop-it-now"
+            >
+              <button class="shop-it-now">
+                <div class="left-arrow">
+                  <ion-icon class="ion-icon" name="arrow-back"></ion-icon>
+                </div>
+                SHOP IT NOW
+                <div class="right-arrow">
+                  <ion-icon class="ion-icon" name="arrow-forward"></ion-icon>
+                </div>
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="featured-products">
+        <div class="featured-products-text">
+          <div class="featured-products">Featured products</div>
+          <div class="view-all-products">
+            View all products
+            <ion-icon
+              class="ion-icon-veiw-products"
+              name="arrow-forward"
+            ></ion-icon>
+          </div>
+        </div>
+
+        <div class="featured-products-images">
+          <div class="featured-products-images-part">
+            <img src="img\product-item1.jpg" alt="" />
+            <div class="clothin-piece-description">Full Sleeve cover shirt</div>
+            <div class="clothin-piece-price-description">40.00$</div>
+            <div class="appearing-box-clothing">
+              <ion-icon name="cash-outline"></ion-icon>
+              <ion-icon name="crop"></ion-icon>
+              <ion-icon name="heart-circle-outline"></ion-icon>
+            </div>
+            <div class="appearing-box-clothing-info">
+              <div class="text-info">Buy now</div>
+              <div class="text-info">Scale up</div>
+              <div class="text-info">Like cloth</div>
+            </div>
+          </div>
+          <div class="featured-products-images-part">
+            <div><img src="img\product-item2.jpg" alt="" /></div>
+            <div class="clothin-piece-description">Blue Jeans</div>
+            <div class="clothin-piece-price-description">38.00$</div>
+            <div class="appearing-box-clothing">
+              <ion-icon name="cash-outline"></ion-icon>
+              <ion-icon name="crop"></ion-icon>
+              <ion-icon name="heart-circle-outline"></ion-icon>
+            </div>
+            <div class="appearing-box-clothing-info">
+              <div class="text-info">Buy now</div>
+              <div class="text-info">Scale up</div>
+              <div class="text-info">Like cloth</div>
+            </div>
+          </div>
+          <div class="featured-products-images-part">
+            <div><img src="img\product-item3.jpg" alt="" /></div>
+            <div class="clothin-piece-description">Yellow T-shirt</div>
+            <div class="clothin-piece-price-description">45.00$</div>
+            <div class="appearing-box-clothing">
+              <ion-icon name="cash-outline"></ion-icon>
+              <ion-icon name="crop"></ion-icon>
+              <ion-icon name="heart-circle-outline"></ion-icon>
+            </div>
+            <div class="appearing-box-clothing-info">
+              <div class="text-info">Buy now</div>
+              <div class="text-info">Scale up</div>
+              <div class="text-info">Like cloth</div>
+            </div>
+          </div>
+          <div class="featured-products-images-part">
+            <div><img src="img\product-item4.jpg" alt="" /></div>
+            <div class="clothin-piece-description">Long white Pants</div>
+            <div class="clothin-piece-price-description">42.00$</div>
+            <div class="appearing-box-clothing">
+              <ion-icon name="cash-outline"></ion-icon>
+              <ion-icon name="crop"></ion-icon>
+              <ion-icon name="heart-circle-outline"></ion-icon>
+            </div>
+            <div class="appearing-box-clothing-info">
+              <div class="text-info">Buy now</div>
+              <div class="text-info">Scale up</div>
+              <div class="text-info">Like cloth</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="shop-it-now">
+        <div class="wear-shoes-hat-wrapper">
+          <div class="first-field">
+            <img src="img\collection-item1.jpg" alt="" />
+            <div class="text-together1">
+              <div class="casual-collection">CASUAL COLLECTION</div>
+              <div class="street">
+                Street <br />
+                Wear.
+              </div>
+              <div class="lorem-ipsum">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt .
+              </div>
+              <div class="shop-collection">
+                shop collection
+                <ion-icon class="ion-icon" name="arrow-forward"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="second-field">
+            <div class="second-part1">
+              <img src="img\collection-item2.jpg" alt="" />
+              <div class="text-together2">
+                <div class="basic-collection">BASIC COLLECTION</div>
+                <div class="basic-shoes">
+                  Basic <br />
+                  Shoes.
+                </div>
+                <div class="shop-collection">
+                  shop collection
+                  <ion-icon class="ion-icon" name="arrow-forward"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="second-part2">
+              <img src="img\collection-item3.jpg" alt="" />
+              <div class="text-together3">
+                <div class="best-selling-product">BEST SELLING PRODUCT</div>
+                <div class="woolen-hat">
+                  Woolen<br />
+                  Hat.
+                </div>
+                <div class="shop-collection">
+                  shop collection
+                  <ion-icon class="ion-icon" name="arrow-forward"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="discount-field">
+          <div class="discount-text-field">
+            <div class="discount-text">Get 25% OFF Discount Coupons!!!</div>
+            <div class="discount-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt.
+            </div>
+          </div>
+          <div class="discount-input-field">
+            <input placeholder="Enter your email adress here" type="text" />
+            <div class="subscribe-now">Subscribe now</div>
+          </div>
+        </div>
+      </section>
+      <section id="best-sales">
+        <div class="grey-part-clothes">
+          <div class="best-selling-products">
+            <div class="best-selling-product-text">Best Selling Products</div>
+            <div class="text-decoration-parts">
+              <button class="text-decoration-best-products">All</button>
+              <button class="text-decoration-best-products">Shoes</button>
+              <button class="text-decoration-best-products">Tshirts</button>
+              <button class="text-decoration-best-products">Pants</button>
+              <button class="text-decoration-best-products">Hoodie</button>
+              <button class="text-decoration-best-products">Outer</button>
+              <button class="text-decoration-best-products">Jackets</button>
+              <button class="text-decoration-best-products">Accessories</button>
+            </div>
+            <div id="bread" class="big-block-products">
+              <div class="featured-products-images-part">
+                <img src="img\selling-products1.jpg" alt="" />
+                <div class="clothin-piece-description">No sleeve T-shirt</div>
+                <div class="clothin-piece-price-description">45.00$</div>
+                <div class="appearing-box-clothing">
+                  <ion-icon name="cash-outline"></ion-icon>
+                  <ion-icon name="crop"></ion-icon>
+                  <ion-icon name="heart-circle-outline"></ion-icon>
+                </div>
+                <div class="appearing-box-clothing-info">
+                  <div class="text-info">Buy now</div>
+                  <div class="text-info">Scale up</div>
+                  <div class="text-info">Like cloth</div>
+                </div>
+              </div>
+              <div class="featured-products-images-part">
+                <div><img src="img\selling-products2.jpg" alt="" /></div>
+                <div class="clothin-piece-description">
+                  Full Sleeve cover Jacket
+                </div>
+                <div class="clothin-piece-price-description">40.00$</div>
+                <div class="appearing-box-clothing">
+                  <ion-icon name="cash-outline"></ion-icon>
+                  <ion-icon name="crop"></ion-icon>
+                  <ion-icon name="heart-circle-outline"></ion-icon>
+                </div>
+                <div class="appearing-box-clothing-info">
+                  <div class="text-info">Buy now</div>
+                  <div class="text-info">Scale up</div>
+                  <div class="text-info">Like cloth</div>
+                </div>
+              </div>
+              <div class="featured-products-images-part">
+                <div><img src="img\selling-products3.jpg" alt="" /></div>
+                <div class="clothin-piece-description">White T-shirt</div>
+                <div class="clothin-piece-price-description">35.00$</div>
+                <div class="appearing-box-clothing">
+                  <ion-icon name="cash-outline"></ion-icon>
+                  <ion-icon name="crop"></ion-icon>
+                  <ion-icon name="heart-circle-outline"></ion-icon>
+                </div>
+                <div class="appearing-box-clothing-info">
+                  <div class="text-info">Buy now</div>
+                  <div class="text-info">Scale up</div>
+                  <div class="text-info">Like cloth</div>
+                </div>
+              </div>
+              <div class="featured-products-images-part">
+                <div><img src="img\selling-products4.jpg" alt="" /></div>
+                <div class="clothin-piece-description">
+                  Full Sleeve cover shirt
+                </div>
+                <div class="clothin-piece-price-description">50.00$</div>
+                <div class="appearing-box-clothing">
+                  <ion-icon name="cash-outline"></ion-icon>
+                  <ion-icon name="crop"></ion-icon>
+                  <ion-icon name="heart-circle-outline"></ion-icon>
+                </div>
+                <div class="appearing-box-clothing-info">
+                  <div class="text-info">Buy now</div>
+                  <div class="text-info">Scale up</div>
+                  <div class="text-info">Like cloth</div>
+                </div>
+              </div>
+
+              <div class="featured-products-images-part">
+                <div><img src="img\selling-products5.jpg" alt="" /></div>
+                <div class="clothin-piece-description">Green Jacket</div>
+                <div class="clothin-piece-price-description">52.00$</div>
+                <div class="appearing-box-clothing">
+                  <ion-icon name="cash-outline"></ion-icon>
+                  <ion-icon name="crop"></ion-icon>
+                  <ion-icon name="heart-circle-outline"></ion-icon>
+                </div>
+                <div class="appearing-box-clothing-info">
+                  <div class="text-info">Buy now</div>
+                  <div class="text-info">Scale up</div>
+                  <div class="text-info">Like cloth</div>
+                </div>
+              </div>
+              <div class="featured-products-images-part">
+                <div><img src="img\selling-products6.jpg" alt="" /></div>
+                <div class="clothin-piece-description">Long sleve Jacket</div>
+                <div class="clothin-piece-price-description">47.00$</div>
+                <div class="appearing-box-clothing">
+                  <ion-icon name="cash-outline"></ion-icon>
+                  <ion-icon name="crop"></ion-icon>
+                  <ion-icon name="heart-circle-outline"></ion-icon>
+                </div>
+                <div class="appearing-box-clothing-info">
+                  <div class="text-info">Buy now</div>
+                  <div class="text-info">Scale up</div>
+                  <div class="text-info">Like cloth</div>
+                </div>
+              </div>
+              <div class="featured-products-images-part">
+                <div><img src="img\selling-products7.jpg" alt="" /></div>
+                <div class="clothin-piece-description">White Top</div>
+                <div class="clothin-piece-price-description">60.00$</div>
+                <div class="appearing-box-clothing">
+                  <ion-icon name="cash-outline"></ion-icon>
+                  <ion-icon name="crop"></ion-icon>
+                  <ion-icon name="heart-circle-outline"></ion-icon>
+                </div>
+                <div class="appearing-box-clothing-info">
+                  <div class="text-info">Buy now</div>
+                  <div class="text-info">Scale up</div>
+                  <div class="text-info">Like cloth</div>
+                </div>
+              </div>
+              <div class="featured-products-images-part">
+                <div><img src="img\selling-products8.jpg" alt="" /></div>
+                <div class="clothin-piece-description">White T-shirt m</div>
+                <div class="clothin-piece-price-description">40.00$</div>
+                <div class="appearing-box-clothing">
+                  <ion-icon name="cash-outline"></ion-icon>
+                  <ion-icon name="crop"></ion-icon>
+                  <ion-icon name="heart-circle-outline"></ion-icon>
+                </div>
+                <div class="appearing-box-clothing-info">
+                  <div class="text-info">Buy now</div>
+                  <div class="text-info">Scale up</div>
+                  <div class="text-info">Like cloth</div>
+                </div>
+              </div>
+              <div class="featured-products-images-part">
+                <div><img src="img\selling-products9.jpg" alt="" /></div>
+                <div class="clothin-piece-description">
+                  Full Sleeve white Jacket
+                </div>
+                <div class="clothin-piece-price-description">35.00$</div>
+                <div class="appearing-box-clothing">
+                  <ion-icon name="cash-outline"></ion-icon>
+                  <ion-icon name="crop"></ion-icon>
+                  <ion-icon name="heart-circle-outline"></ion-icon>
+                </div>
+                <div class="appearing-box-clothing-info">
+                  <div class="text-info">Buy now</div>
+                  <div class="text-info">Scale up</div>
+                  <div class="text-info">Like cloth</div>
+                </div>
+              </div>
+              <div class="featured-products-images-part">
+                <div><img src="img\selling-products10.jpg" alt="" /></div>
+                <div class="clothin-piece-description">Yellow Blouse</div>
+                <div class="clothin-piece-price-description">50.00$</div>
+                <div class="appearing-box-clothing">
+                  <ion-icon name="cash-outline"></ion-icon>
+                  <ion-icon name="crop"></ion-icon>
+                  <ion-icon name="heart-circle-outline"></ion-icon>
+                </div>
+                <div class="appearing-box-clothing-info">
+                  <div class="text-info">Buy now</div>
+                  <div class="text-info">Scale up</div>
+                  <div class="text-info">Like cloth</div>
+                </div>
+              </div>
+              <div class="featured-products-images-part">
+                <div><img src="img\selling-products11.jpg" alt="" /></div>
+                <div class="clothin-piece-description">Green T-shirt</div>
+                <div class="clothin-piece-price-description">44.00$</div>
+                <div class="appearing-box-clothing">
+                  <ion-icon name="cash-outline"></ion-icon>
+                  <ion-icon name="crop"></ion-icon>
+                  <ion-icon name="heart-circle-outline"></ion-icon>
+                </div>
+                <div class="appearing-box-clothing-info">
+                  <div class="text-info">Buy now</div>
+                  <div class="text-info">Scale up</div>
+                  <div class="text-info">Like cloth</div>
+                </div>
+              </div>
+              <div class="featured-products-images-part">
+                <div><img src="img\selling-products12.jpg" alt="" /></div>
+                <div class="clothin-piece-description">White T-shirt fm</div>
+                <div class="clothin-piece-price-description">38.00$</div>
+                <div class="appearing-box-clothing">
+                  <ion-icon name="cash-outline"></ion-icon>
+                  <ion-icon name="crop"></ion-icon>
+                  <ion-icon name="heart-circle-outline"></ion-icon>
+                </div>
+                <div class="appearing-box-clothing-info">
+                  <div class="text-info">Buy now</div>
+                  <div class="text-info">Scale up</div>
+                  <div class="text-info">Like cloth</div>
+                </div>
+              </div>
+              <div class="featured-products-images-part">
+                <div><img src="img\selling-products13.jpg" alt="" /></div>
+                <div class="clothin-piece-description">
+                  Shoes Tiyagi Skorohod
+                </div>
+                <div class="clothin-piece-price-description">40.00$</div>
+                <div class="appearing-box-clothing">
+                  <ion-icon name="cash-outline"></ion-icon>
+                  <ion-icon name="crop"></ion-icon>
+                  <ion-icon name="heart-circle-outline"></ion-icon>
+                </div>
+                <div class="appearing-box-clothing-info">
+                  <div class="text-info">Buy now</div>
+                  <div class="text-info">Scale up</div>
+                  <div class="text-info">Like cloth</div>
+                </div>
+              </div>
+              <div class="featured-products-images-part">
+                <div><img src="img\selling-products14.jpg" alt="" /></div>
+                <div class="clothin-piece-description">Colorful Shoes</div>
+                <div class="clothin-piece-price-description">41.00$</div>
+                <div class="appearing-box-clothing">
+                  <ion-icon name="cash-outline"></ion-icon>
+                  <ion-icon name="crop"></ion-icon>
+                  <ion-icon name="heart-circle-outline"></ion-icon>
+                </div>
+                <div class="appearing-box-clothing-info">
+                  <div class="text-info">Buy now</div>
+                  <div class="text-info">Scale up</div>
+                  <div class="text-info">Like cloth</div>
+                </div>
+              </div>
+              <div class="featured-products-images-part">
+                <div><img src="img\selling-products15.jpg" alt="" /></div>
+                <div class="clothin-piece-description">Fall Tapki</div>
+                <div class="clothin-piece-price-description">50.00$</div>
+                <div class="appearing-box-clothing">
+                  <ion-icon name="cash-outline"></ion-icon>
+                  <ion-icon name="crop"></ion-icon>
+                  <ion-icon name="heart-circle-outline"></ion-icon>
+                </div>
+                <div class="appearing-box-clothing-info">
+                  <div class="text-info">Buy now</div>
+                  <div class="text-info">Scale up</div>
+                  <div class="text-info">Like cloth</div>
+                </div>
+              </div>
+              <div class="featured-products-images-part">
+                <div><img src="img\selling-products16.jpg" alt="" /></div>
+                <div class="clothin-piece-description">White Nikes</div>
+                <div class="clothin-piece-price-description">45.00$</div>
+                <div class="appearing-box-clothing">
+                  <ion-icon name="cash-outline"></ion-icon>
+                  <ion-icon name="crop"></ion-icon>
+                  <ion-icon name="heart-circle-outline"></ion-icon>
+                </div>
+                <div class="appearing-box-clothing-info">
+                  <div class="text-info">Buy now</div>
+                  <div class="text-info">Scale up</div>
+                  <div class="text-info">Like cloth</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="customer-review-section">
+          <div class="review">
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-half"></ion-icon>
+            </div>
+            <div class="profile-picture-review">
+              <img src="img\first-review.jpeg" alt="" />
+              <p>Elizabeth Senter</p>
+              <p>@elizabeth.senter</p>
+            </div>
+            <div class="profile-picture-review-review-text">
+              Here is no one who loves pain itself, who seeks after it and wants
+              to have it, simply because it is pain...
+            </div>
+          </div>
+          <div class="review">
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+            <div class="profile-picture-review">
+              <img src="img\second-review.jpg" alt="" />
+              <p>Emily Roberts</p>
+              <p>@emy.roberts</p>
+            </div>
+            <div class="profile-picture-review-review-text">
+              I am impressed by this website's extensive resources and timely
+              updates. It's a go-to platform for staying informed and empowered.
+            </div>
+          </div>
+          <div class="review">
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-half"></ion-icon>
+            </div>
+            <div class="profile-picture-review">
+              <img src="img\fourth-review.jpg" alt="" />
+              <p>Sophia Patel</p>
+              <p>@sophy.patel</p>
+            </div>
+            <div class="profile-picture-review-review-text">
+              I applaude to this website's engaging content and interactive
+              features. It offers a delightful experience for users of all
+              backgrounds.
+            </div>
+          </div>
+          <div class="review">
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+            <div class="profile-picture-review">
+              <img src="img\fifth-review.jpg" alt="" />
+              <p>Adam Johnson</p>
+              <p>@adam.jonhs</p>
+            </div>
+            <div class="profile-picture-review-review-text">
+              I highly recommends this website for its user-friendly interface
+              and valuable content. A must-visit for anyone seeking reliable
+              information;
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="flash-sales">
+        <div class="bread">
+          <div class="featured-products-text">
+            <div class="featured-products">Flash sales</div>
+            <div class="view-all-products">
+              View all products
+              <ion-icon
+                class="ion-icon-veiw-products"
+                name="arrow-forward"
+              ></ion-icon>
+            </div>
+          </div>
+
+          <div class="featured-products-images">
+            <div class="featured-products-images-part">
+              <img src="img\product-item1.jpg" alt="" />
+              <div class="clothin-piece-description">Black pants w holes</div>
+              <div class="clothin-piece-price-description-sale">
+                <span class="new-price-sales">50.00$ </span> -45.00$
+              </div>
+              <div class="appearing-box-clothing">
+                <ion-icon name="cash-outline"></ion-icon>
+                <ion-icon name="crop"></ion-icon>
+                <ion-icon name="heart-circle-outline"></ion-icon>
+              </div>
+              <div class="appearing-box-clothing-info">
+                <div class="text-info">Buy now</div>
+                <div class="text-info">Scale up</div>
+                <div class="text-info">Like cloth</div>
+              </div>
+              <div class="discount-sale">10% off</div>
+            </div>
+            <div class="featured-products-images-part">
+              <div><img src="img\product-item2.jpg" alt="" /></div>
+              <div class="clothin-piece-description">Blue outfit</div>
+              <div class="clothin-piece-price-description-sale">
+                <span class="new-price-sales">45.00$ </span> -40.00$
+              </div>
+              <div class="appearing-box-clothing">
+                <ion-icon name="cash-outline"></ion-icon>
+                <ion-icon name="crop"></ion-icon>
+                <ion-icon name="heart-circle-outline"></ion-icon>
+              </div>
+              <div class="appearing-box-clothing-info">
+                <div class="text-info">Buy now</div>
+                <div class="text-info">Scale up</div>
+                <div class="text-info">Like cloth</div>
+              </div>
+              <div class="discount-sale">10% off</div>
+            </div>
+            <div class="featured-products-images-part">
+              <div><img src="img\product-item3.jpg" alt="" /></div>
+              <div class="clothin-piece-description">White joggers</div>
+              <div class="clothin-piece-price-description-sale">
+                <span class="new-price-sales">40.00$ </span> -36.00$
+              </div>
+              <div class="appearing-box-clothing">
+                <ion-icon name="cash-outline"></ion-icon>
+                <ion-icon name="crop"></ion-icon>
+                <ion-icon name="heart-circle-outline"></ion-icon>
+              </div>
+              <div class="appearing-box-clothing-info">
+                <div class="text-info">Buy now</div>
+                <div class="text-info">Scale up</div>
+                <div class="text-info">Like cloth</div>
+              </div>
+              <div class="discount-sale">10% off</div>
+            </div>
+            <div class="featured-products-images-part">
+              <div><img src="img\product-item4.jpg" alt="" /></div>
+              <div class="clothin-piece-description">
+                Full Sleeve cover shirt
+              </div>
+              <div class="clothin-piece-price-description-sale">
+                <span class="new-price-sales">45.00$ </span> -40.00$
+              </div>
+              <div class="appearing-box-clothing">
+                <ion-icon name="cash-outline"></ion-icon>
+                <ion-icon name="crop"></ion-icon>
+                <ion-icon name="heart-circle-outline"></ion-icon>
+              </div>
+              <div class="appearing-box-clothing-info">
+                <div class="text-info">Buy now</div>
+                <div class="text-info">Scale up</div>
+                <div class="text-info">Like cloth</div>
+              </div>
+              <div class="discount-sale">10% off</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="quote-of-day">
+          <div class="quote-part-1">Quote of the day</div>
+          <div class="quote-part-2">
+            "It's true, I don't like the whole cutoff-shorts-and-T-shirt look,
+            but I think you can look fantastic in casual clothes."
+          </div>
+          <div class="quote-part-3">- Dr. Seuss</div>
+        </div>
+      </section>
+
+      <section>
+        <div class="grey-part-sponsors">
+          <img src="img\brand1.png" alt="" />
+          <img src="img\brand2.png" alt="" />
+          <img src="img\brand3.png" alt="" />
+          <img src="img\brand4.png" alt="" />
+          <img src="img\brand5.png" alt="" />
+        </div>
+      </section>
+
+      <section id="contact-us">
+        <div class="follow-our-instagram">
+          <div class="instagram-pages">Follow our instagram</div>
+          <div class="instagram-pages-names">
+            Our official Instagram account
+            <span class="insta-link">@Holubinka</span> or
+            <span class="insta-link">#Holubinka-clothing</span>
+          </div>
+
+          <div class="insta-images">
+            <div class="insta-photo">
+              <img src="img\insta-image1.jpg" alt="" /><ion-icon
+                name="logo-instagram"
+              ></ion-icon>
+            </div>
+            <div class="insta-photo">
+              <img src="img\insta-image2.jpg" alt="" /><ion-icon
+                name="logo-instagram"
+              ></ion-icon>
+            </div>
+
+            <div class="insta-photo">
+              <img src="img\insta-image3.jpg" alt="" /><ion-icon
+                name="logo-instagram"
+              ></ion-icon>
+            </div>
+
+            <div class="insta-photo">
+              <img src="img\insta-image4.jpg" alt="" /><ion-icon
+                name="logo-instagram"
+              ></ion-icon>
+            </div>
+
+            <div class="insta-photo">
+              <img src="img\insta-image5.jpg" alt="" /><ion-icon
+                name="logo-instagram"
+              ></ion-icon>
+            </div>
+
+            <div class="insta-photo">
+              <img src="img\insta-image6.jpg" alt="" /><ion-icon
+                name="logo-instagram"
+              ></ion-icon>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="our-advantages">
+          <div>
+            <ion-icon name="car"></ion-icon><span>Free shipping</span> Over 200$
+          </div>
+          <div>
+            <ion-icon name="card"></ion-icon><span>Money back</span> Return
+            within 7days
+          </div>
+          <div>
+            <ion-icon name="pricetags"></ion-icon><span>Buy 4 get 5th</span> 50%
+            off
+          </div>
+          <div>
+            <ion-icon name="help-circle"></ion-icon
+            ><span>Any questions?</span> experts are ready
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="first-footer">
+        <div>
+          <h2>Shop infromation</h2>
+          <ul class="footer-list">
+            <li>About us</li>
+            <li>Conditions</li>
+            <li>Our Journals</li>
+            <li>Careers</li>
+            <li>Affiliate Programme</li>
+            <li>Holubinka Press</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Customer service</h2>
+          <ul class="footer-list">
+            <li>FAQ</li>
+            <li>Contact</li>
+            <li>Privacy Policy</li>
+            <li>Return and Refund</li>
+            <li>Cookie Guidelines</li>
+            <li>Delivery Information</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contact us</h2>
+          <ul class="footer-list">
+            <li>
+              Do you have any qustions or suggestions?<br /><strong
+                >danylo.holubinka@gmail.com</strong
+              >>
+            </li>
+            <li>
+              Do you need assitance? Give us a call.<br /><strong
+                >+38 000 000 0001</strong
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>Stay tuned for collection 2023</h2>
+          <ul class="footer-list">
+            <li>
+              <ion-icon name="logo-facebook"></ion-icon>
+              <ion-icon name="logo-twitter"></ion-icon>
+              <ion-icon name="logo-youtube"></ion-icon>
+              <ion-icon name="logo-youtube"></ion-icon>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="second-footer">
+        <h5>Payment options:</h5>
+        <img src="img\visa-icon.jpg" alt="" />
+        <img src="img\american-express.jpg" alt="" />
+        <img src="img\mastercard.png" alt="" />
+      </div>
+    </footer>
+
+    <script src="js\transition.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

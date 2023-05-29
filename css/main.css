@@ -1,0 +1,797 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*first banner*/
+.first-photo-container{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.video{
+    object-fit:cover;
+    height: 70%;
+    overflow: hidden;
+}
+
+.banner-1-text-position{
+    position: absolute;
+    top:25%;
+    left:10%;
+    width:50%;
+}
+
+.spring-collection-text{
+    font-family: Roboto, sans-serif;
+    font-size: 700%;
+    font-weight: bold;
+    color:#162938;
+    position: relative;
+    width:100%;
+}
+
+.spring-collection-info{
+    width:100%;   
+    line-height: 25px;
+    font-weight: bold;
+    color:#162938;
+}
+
+.no-decoration{
+    text-decoration: none;
+}
+
+.shop-it-now{
+    margin-top: 40px;
+    width: 245px;
+    height: 75px;
+    background-color: white;
+    font-size: 15px;
+    font-weight: bold;
+    color:#162938;
+    transition: 0.4s;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-arrow{
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-top: 2px ;
+    transition: 0.15s;
+}
+
+
+.right-arrow{
+    margin-left: 10px;
+    vertical-align: middle;
+    margin-top: 2px ;
+    transition: 0.15s;
+}
+
+.shop-it-now:hover .left-arrow{
+    margin-right:20px;
+}
+
+.shop-it-now:hover .right-arrow{
+    margin-left:20px;
+}
+
+.shop-it-now:hover .ion-icon{
+    transform: scale(1.5);
+    transition: transform 0.15s ease;
+    transform: scaleY(-1);
+}
+
+.shop-it-now:hover{
+    background-color: #162938;
+    color:#fff;
+}
+
+.shop-it-now:active{
+    background-color: #0f2230;
+    color:#fff;
+    box-shadow: 0 0 10px black;
+}
+
+
+
+/*after banner text*/
+
+.featured-products-text{
+    display: flex;
+    flex-direction:row ;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.featured-products{
+    font-size: 45px;
+    font-weight: bold;
+    margin-left:12px ;
+}
+
+.view-all-products{
+    font-size: 19px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+
+
+.ion-icon-veiw-products{
+    margin-left: 10px;
+    transition: 0.15s;
+    cursor: pointer;
+    transform: rotate(0deg);
+}
+
+
+.view-all-products:hover{
+    color: rgb(66, 148, 148);
+}
+
+.view-all-products:hover .ion-icon-veiw-products{
+    margin-left: 35px;
+    transform: rotate(90deg);
+}
+
+
+/*after text products*/
+
+.featured-products-images{
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly ;
+    position: relative;
+}
+
+
+.featured-products-images-part img{
+    border:1px solid rgb(185, 185, 185);
+    padding:7px;  
+    cursor: pointer; 
+    height: auto;
+    width: 100%;
+}
+
+
+.clothin-piece-description{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: bold;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Roboto, sans-relief;
+    transition: 0.15s ease;
+}
+
+.clothin-piece-description:hover{
+    border-radius: 5px;
+    color: rgb(66, 148, 148);
+    box-shadow: 0 0 5px grey;
+}
+
+.clothin-piece-price-description{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: bold;
+    color: rgb(66, 148, 148);
+    cursor: text;
+}
+
+.featured-products-images-part{
+    position:relative;
+    height: 590px;
+    display: block;
+    
+}
+
+.appearing-box-clothing{    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 75%;
+    height: 8%;
+    margin-left: 12.5%;
+    position: absolute;
+    bottom:25%;
+    background-color: #fff;
+    opacity: 0;
+    transition: 0.35s ease;
+    vertical-align: middle;
+    align-items: center;
+    z-index: 2;
+}
+
+.text-info{
+    z-index: 3;
+}
+
+
+.appearing-box-clothing ion-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.25s ease;
+}
+.appearing-box-clothing:hover{  
+    transform: scale(1.1);
+}
+
+.appearing-box-clothing ion-icon:hover{  
+    transform: scale(1.4);
+}
+
+.appearing-box-clothing ion-icon:active{  
+    transform: scale(1.8);
+}
+
+
+.featured-products-images-part:hover .appearing-box-clothing{
+    bottom:30%;
+    opacity:1;
+}
+
+
+.appearing-box-clothing-info{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 12.5%;
+    bottom:23%;
+    width: 75%;
+    height: 8%;
+    transition: 0.35s ease;
+    vertical-align: middle;
+    align-items: center;
+    background-color: rgba(255,255,255, 1);
+    opacity:0;
+}
+
+.appearing-box-clothing:hover + .appearing-box-clothing-info{
+    opacity: 1;
+}
+
+
+/*3 image block*/
+
+.wear-shoes-hat-wrapper{
+    width: 100%;
+    height: 50em;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+    margin-top: 125px;
+}
+
+
+.second-field{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.first-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.first-field img{
+    height:630px;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+
+
+.text-together1{
+    position: absolute;
+    top:15em;
+    right:10%;
+    width: 450px;
+}
+
+
+.casual-collection{
+    font-size:1.1em;
+    color:grey;
+    margin-bottom:2em;    
+}
+
+.street{
+    font-size:5em;
+    font-weight: bold;
+    margin-bottom:.5em;
+}
+
+.lorem-ipsum{
+    margin-bottom: 3em;
+    color:grey;
+}
+
+.shop-collection{
+    display: flex;
+    align-items: center;
+    transition: 0.45s ease;
+    cursor: pointer;
+}
+
+.ion-icon{
+    transition: 0.45s ease;
+}
+
+.shop-collection:hover{
+    color: rgb(66, 148, 148);
+}
+
+.shop-collection:hover .ion-icon{
+    color: rgb(66, 148, 148);
+    margin-left: 15px;
+}
+
+.second-part1{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+
+.second-part1 img{
+    height: 305px;
+    width: 90%;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+
+.text-together2{
+    position: absolute;
+    top:10em;
+    left:10%;
+    width: 450px;
+}
+
+
+.basic-collection{
+    font-size:1.1em;
+    color:grey;
+    margin-bottom:1em;  
+}
+
+
+.basic-shoes{
+    font-size:3em;
+    font-weight: bold;
+    margin-bottom:0.3em;
+}
+
+
+
+.second-part2{
+    display: flex;
+    align-items:start ;
+    justify-content: center;
+    position: relative;
+}
+
+
+.second-part2 img{
+    height: 305px;
+    width: 90%;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+
+
+.text-together3{
+    position: absolute;
+    top:4em;
+    left:10%;
+    width: 450px;
+}
+
+
+.best-selling-product{
+    font-size:1.1em;
+    color:grey;
+    margin-bottom:1em;  
+}
+
+
+.woolen-hat{
+    font-size:3em;
+    font-weight: bold;
+    margin-bottom:0.3em;
+}
+
+
+/*discount field*/
+
+
+.discount-field{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    height: 170px;
+    column-gap: 50px;
+    margin:125px 20px 125px 20px;
+}
+
+.discount-text-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:25px;
+}
+
+
+.discount-text{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.discount-description{
+    color:grey;
+    margin-top: 1.3em;
+    line-height:2em;
+}
+
+.discount-input-field{
+    display: flex;
+    flex-direction:row ;
+    text-align: center;
+}
+
+.discount-input-field input{
+    width:100%;
+    height: 60px;
+    margin-top: 10px;
+    font-size: 1.3em;
+    padding-left: 1em ;
+}
+
+.discount-input-field input::placeholder{
+ color:rgb(217, 217, 217);
+}
+
+.subscribe-now{
+    height:60px;
+    width:23%;
+    background-color: black;
+    color:#fff;
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 19px;
+    margin-left: -10px;
+}
+
+
+
+/*grey part clothes templates*/
+
+
+.grey-part-clothes{
+    width:100%;
+    height:3000px;
+    background-color: rgba(225, 225, 225, 0.3);
+    position: relative;
+}
+
+
+
+.best-selling-product-text{
+    padding-top:125px ;
+    font-size: 48px;
+    font-weight: bold;
+    margin-left: 35px;
+}
+
+
+.text-decoration-parts{
+    margin-left: 55px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+
+.text-decoration-best-products{
+    font-size: 19px;
+    color:grey;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+
+.text-decoration-best-products:hover,
+.text-decoration-best-products:focus{
+    color: rgb(66, 148, 148);
+}
+
+/*
+.big-block-products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+*/
+
+
+.big-block-products{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height:2000px;
+    row-gap: 30px;
+    margin-top: 100px;
+}
+
+
+
+
+
+
+/*customer reviews*/
+
+
+.customer-review-section{
+    width:100%;
+    height:600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    vertical-align: middle;
+    position: static;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    flex-wrap: wrap;
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: space-evenly;
+    height: 350px;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px grey;
+}
+
+
+.profile-picture-review img{
+    width:100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin-bottom: 5px;
+}
+
+.profile-picture-review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    column-gap: 10px;
+}
+
+.profile-picture-review-review-text{
+    width:80%;
+}
+
+/*flash sales*/
+
+.discount-sale{
+    position: absolute;
+    top:5%;
+    left:8%;
+    width:25%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    background-color: rgba(202, 72, 72, 0.9);
+    font-weight: 500;
+}
+
+.clothin-piece-price-description-sale{
+    font-size: 26px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: bold;
+    color: rgb(66, 148, 148);
+    cursor: text;
+    text-decoration:none ;
+}
+
+.new-price-sales{
+    font-size: 21px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: bold;
+    color: grey;
+    cursor: text;
+    text-decoration:line-through ;
+}
+
+/*qoute of day*/
+
+.quote-of-day{
+    width:100%;
+    height: 550px;
+    margin-top:125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid grey;
+}
+
+
+.quote-part-1{
+    font-size: 4em;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+
+
+.quote-part-2{
+    font-size: 2em;
+    width:50%;
+    font-weight: 300;
+    color: grey;
+    margin-bottom:35px;
+    text-align: center;
+}
+
+.quote-part-3{
+    font-size: 1.3em;
+    font-weight: 400;
+    color: grey;
+    margin-bottom:35px;
+}
+
+/*our sponsors*/
+.grey-part-sponsors{
+    width:100%;
+    height:300px;
+    background-color: rgba(225, 225, 225, 0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 75px;
+    padding-right: 75px;
+    flex-wrap: wrap;
+}
+
+/*follow our instagrams*/
+
+.instagram-pages{
+    font-size: 3em;
+    font-weight: 500;
+    margin-top: 125px;
+    margin-left: 25px;
+}
+
+
+.instagram-pages-names{
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-left: 25px;
+    color:grey;
+}
+
+
+.insta-link{
+    color: rgb(66, 148, 148);
+    cursor: pointer;
+}
+
+.insta-link:hover{
+    text-decoration: underline;
+}
+
+
+.insta-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    row-gap: 25px;
+}
+
+
+.insta-photo{
+    transition: 0.3s ease;
+    position: relative;
+}
+
+
+.insta-photo ion-icon{
+    position: absolute;
+    top:50%;
+    left:50%;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.insta-photo:hover{
+    transform: scale(1.18);
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+.insta-photo:hover ion-icon{
+    transition: 0.3s ease;
+    transform: scale(3);
+    cursor: pointer;
+    opacity: 0.65;
+}
+
+
+
+/*our advantages*/
+
+
+.our-advantages{
+    margin-top: 100px;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    row-gap: 25px;
+}
+
+.our-advantages ion-icon{
+    margin-right: 15px;
+    transform:scale(2);
+}
+
+.our-advantages span{
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.our-advantages div{
+    font-size: 1.2em;
+}
+
+
+
+/*media*/
