@@ -9,6 +9,10 @@
 
 **Live Demo:** [https://magshproget.github.io/Vibewave.github.io/](https://magshproget.github.io/Vibewave.github.io/)
 
+<p align="center">
+  <img src="assets/preview.png" alt="Vibewave E-Commerce Landing Preview" width="100%">
+</p>
+
 ---
 
 ## Основні блоки та функціонал
