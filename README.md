@@ -9,33 +9,59 @@
 
 **Live Demo:** [https://magshproget.github.io/Vibewave.github.io/](https://magshproget.github.io/Vibewave.github.io/)
 
+---
+
+## Огляд інтерфейсу та прив'язка до компонентів
+
+### 1. Головний екран та навігація
+**Файли:** `css/header-style.css`, `css/menu.css`, `index.html#start`
+
 <p align="center">
-  <img src="assets/preview.png" alt="Vibewave E-Commerce Landing Preview" width="100%">
+  <img src="assets/hero-section.png" alt="Hero Section and Header Navigation" width="100%">
 </p>
+
+- Верхня панель сповіщень: інформація про доставку, гаряча лінія підтримки та швидкі посилання.
+- Банер сезонної колекції (Spring Collection): акцентні промо-блоки із закликом до дії (CTA).
+- Головне навігаційне меню з підтримкою переходу між розділами сайту.
 
 ---
 
-## Основні блоки та функціонал
+### 2. Каталог товарів та інтерактивні картки
+**Файли:** `css/main.css`, `index.html#featured-products`
 
-- **Головний екран (Hero Section)**:
-  - Презентація сезонних пропозицій (Spring Collection).
-  - Акцентний заклик до дії (CTA) та навігація по колекціях.
-- **Каталог товарів (Featured Products & Best Sales)**:
-  - Адаптивна сітка карток одягу та аксесуарів (Flexbox/Grid).
-  - Hover-ефекти: динамічна поява кнопок додавання в кошик та швидкого перегляду.
-  - Категорії знижок, ціни та візуальне маркування.
-- **Flash Sales & Promo**:
-  - Блоки лімітованих акційних пропозицій та банери сезонного розпродажу.
-- **Інтерактивні модальні форми (Auth Modal)**:
-  - Спливаюче вікно входу та реєстрації на базі Vanilla JavaScript.
-  - Плавна анімація перемикання між режимами Login та Register без перезавантаження сторінки.
-  - Валідація полів та інтерактивні елементи керування (пароль, «Запам'ятати мене»).
-- **Мобільна адаптивність**:
-  - Повноцінне мобільне меню (Hamburger / Side drawer) для компактних екранів.
-  - Медіа-запити (`media.css`) для коректного відображення на смартфонах, планшетах і десктопах.
-- **Відгуки та футер**:
-  - Секція відгуків клієнтів (Testimonials).
-  - Інформація про доставку, платіжні системи та соціальні мережі.
+<p align="center">
+  <img src="assets/catalog-products.png" alt="Featured Products Catalog" width="100%">
+</p>
+
+- Адаптивна сітка товарів (Flexbox/Grid), що динамічно підлаштовується під роздільну здатність дисплея.
+- Hover-ефекти карток: плавна CSS-анімація появи кнопок додавання в кошик та швидкого перегляду (`.appearing-box-clothing`).
+- Інформаційні блоки цінників, знижок та категорій одягу.
+
+---
+
+### 3. Анімоване модальне вікно авторизації
+**Файли:** `css/login-register.css`, `js/transition.js`
+
+<p align="center">
+  <img src="assets/auth-modal.png" alt="Authentication Modal Dialog" width="100%">
+</p>
+
+- Модальне вікно входу та реєстрації на базі чистого JavaScript (DOM manipulation) без сторонніх бібліотек.
+- Плавна анімація перемикання станів Login та Register через CSS-транзиції (`.wrapper.active`).
+- Інтерактивні поля вводу, валідація, чекбокс збереження сесії та форма відновлення пароля.
+
+---
+
+### 4. Промо-секції, Flash Sales та відгуки
+**Файли:** `css/footer.css`, `css/media.css`, `index.html#flash-sales`
+
+<p align="center">
+  <img src="assets/promotions-reviews.png" alt="Promotions and Customer Reviews" width="100%">
+</p>
+
+- Блоки лімітованих акційних пропозицій та таймерів гарячих знижок.
+- Картка клієнтських відгуків (Testimonials) із фотографіями та оцінками покупців.
+- Підвал сайту: форма підписки на новини, платіжні системи (Visa, MasterCard, American Express) та соціальні мережі.
 
 ---
 
@@ -55,6 +81,11 @@
 
 ```text
 Vibewave.github.io/
+├── assets/                # Скріншоти та графіка для документації
+│   ├── hero-section.png
+│   ├── catalog-products.png
+│   ├── auth-modal.png
+│   └── promotions-reviews.png
 ├── css/
 │   ├── main.css           # Основні стилі сіток, секцій каталогу та банерів
 │   ├── header-style.css   # Стилі верхньої панелі та навігації
