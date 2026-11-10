@@ -52,16 +52,16 @@
 
 ---
 
-### 4. Промо-секції, Flash Sales та відгуки
-**Файли:** `css/footer.css`, `css/media.css`, `index.html#flash-sales`
+### 4. Акційні пропозиції (Flash Sales) та відгуки
+**Файли:** `css/main.css`, `css/footer.css`, `index.html#flash-sales`
 
 <p align="center">
-  <img src="assets/promotions-reviews.png" alt="Promotions and Customer Reviews" width="100%">
+  <img src="assets/promotions-reviews.png" alt="Flash Sales and Special Offers" width="100%">
 </p>
 
-- Блоки лімітованих акційних пропозицій та таймерів гарячих знижок.
-- Картка клієнтських відгуків (Testimonials) із фотографіями та оцінками покупців.
-- Підвал сайту: форма підписки на новини, платіжні системи (Visa, MasterCard, American Express) та соціальні мережі.
+- Блоки лімітованих акційних пропозицій зі знижками (`.discount-sale`, 10% off).
+- Картки товарів розпродажу із закресленою базовою ціною та новою акційною вартістю (`.new-price-sales`).
+- Швидкі дії при наведенні курсору та перехід до повного каталогу знижок.
 
 ---
 
